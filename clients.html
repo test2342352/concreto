@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Concreto Remix</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center" style="height:100px; background: linear-gradient(to right, #a6a7a2, #4d4c4c);">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html"><img class="logo" src='./assets/img/logo.png' alt='Concreto Logo' style="height: 100px;"/></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul> 
+          <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
+          <li><a class="nav-link scrollto" href="about.html">About us</a></li>
+          <!-- <li><a class="nav-link scrollto" href="board.html">Board of Direction</a></li> -->
+          <li><a class="nav-link scrollto " href="sectors.html">Sectors</a></li>
+          <li><a href="latest-projects.html">Latest Projects</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          
+          <!-- <li class="dropdown"><a href="#"><span>Careers</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="getstarted scrollto" href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <br>
+  <br>
+    </section><!-- End Portfolio Section -->
+    <div id="clients" ></div>
+
+    <section class="section-bg" style="background-color:rgb(66, 66, 66) !important;">
+
+      <div class="container">
+
+
+          <div class="section-title" style="color:rgb(243, 243, 243);">
+          <h3 ><strong>OUR CLIENTS</strong></h3>
+          <p>Over the past three years, we have put our customers'
+            needs first and foremost, as a result, we have established
+            a long-term strategic relationship to ensure the delivery
+            of a premium welcome service. During these few
+            periods, we have a large customer base</p>
+        </div>
+        <style>
+          img{
+      height:150px;
+      width:100%;
+      }
+      
+      div [class^="col-"]{
+      padding-left:5px;
+      padding-right:5px;
+      }
+      .card{
+      transition:0.5s;
+      cursor:pointer;
+      }
+      .card-title{  
+      font-size:15px;
+      transition:1s;
+      cursor:pointer;
+      }
+      .card-title i{  
+      font-size:15px;
+      transition:1s;
+      cursor:pointer;
+      color:#ffa710
+      }
+      .card-title i:hover{
+      transform: scale(1.25) rotate(100deg); 
+      color:#18d4ca;
+      
+      }
+      .card:hover{
+      transform: scale(1.05);
+      box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+      }
+      .card-text{
+      height:80px;  
+      }
+      
+      .card::before, .card::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: scale3d(0, 0, 1);
+      transition: transform .3s ease-out 0s;
+      background: rgba(255, 255, 255, 0.1);
+      content: '';
+      pointer-events: none;
+      }
+      .card::before {
+      transform-origin: left top;
+      }
+      .card::after {
+      transform-origin: right bottom;
+      }
+      .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+      transform: scale3d(1, 1, 1);
+      }
+        </style>
+      
+        <div class="container  py-4">
+           
+            <div class="row text-center">
+             
+      
+                <div class="col-md-6 col-lg-4 mb-4">
+                  <div class="row mb-2"> 
+                  <div class="col " style="padding-right:0;">
+                      <div class="card card-block" style="background-color: #4d4c4c;" >
+                    
+                        <div class="text-center" >
+                          <img class = '' src="./logos/talaat.jpg" alt="" style="height: 90%; width: 90%;">
+                        </div>
+                        <h5 class="card-title mt-3 mb-3 text-center">TMG </h5>
+                        
+                  </div>
+                  </div>
+      
+                  <div class="col ">
+                    <div class="card card-block" style="background-color: #4d4c4c;" >
+                      <div class="text-center">
+                        <img class = '' src="./logos/palmhills.jpg" alt=""  style="height: 90%; width: 90%;">
+                      </div>
+                      <h5 class="card-title mt-3 mb-3 text-center">Palm Hills</h5>
+                </div>
+                </div>
+                  </div>
+      
+                     <div class="row"> 
+                      <div class="col " style="padding-right:0;" >
+                        <div class="card card-block" style="background-color: #4d4c4c;" >
+                          <div class="text-center">
+                            <img class = '' src="./logos/redcon.jpg" alt="" style="height: 90%; width: 90%;">
+                          </div>
+                          <h5 class="card-title mt-3 mb-3 text-center">Redcon</h5>
+                    </div>
+                    </div>
+      
+                    <div class="col ">
+                      <div class="card card-block" style="background-color: #4d4c4c;" >
+                        <div class="text-center">
+                          <img class = '' src="./logos/tatweer.jpg" alt="" style="height: 90%; width: 90%;">
+                        </div>
+                        <h5 class="card-title mt-3 mb-3 text-center">Tatweer Masr</h5>
+      
+                  </div>
+                  </div>
+                  </div>
+              </div>
+      
+      
+      
+                
+                <div class="col-md-6 col-lg-4 mb-4">
+                  <div class="row mb-2"> 
+                  <div class="col " style="padding-right:0;">
+                      <div class="card card-block" style="background-color: #4d4c4c;" >
+                    
+                        <div class="text-center">
+                          <img class = '' src="./logos/elsweedy.jpg" alt="" style="height: 90%; width: 90%;">
+                        </div>
+                        <h5 class="card-title mt-3 mb-3 text-center">ElSwedey Electric</h5>
+                        
+                  </div>
+                  </div>
+      
+                  <div class="col ">
+                    <div class="card card-block" style="background-color: #4d4c4c;" >
+      
+                      <div class="text-center">
+                        <img class = '' src="./logos/hassanallam.jpg" alt="" style="height: 90%; width: 90%;">
+                      </div>
+                      <h5 class="card-title mt-3 mb-3 text-center">Hassan Allam</h5> 
+                </div>
+                </div>
+                  </div>
+      
+                     <div class="row"> 
+                      <div class="col " style="padding-right:0;" >
+                        <div class="card card-block" style="background-color: #4d4c4c;" >
+                          <div class="text-center">
+                            <img class = '' src="./logos/elgharbly.jpg" alt="" style="height: 90%; width: 90%;">
+                          </div>
+                          <h5 class="card-title mt-3 mb-3 text-center">Elghrably</h5>
+                    </div>
+                    </div>
+      
+                    <div class="col ">
+                      <div class="card card-block" style="background-color: #4d4c4c;" >
+      
+                        <div class="text-center">
+                          <img class = '' src="./logos/mountainview.jpg" alt="" style="height: 90%; width: 90%;">
+                        </div>
+                        <h5 class="card-title mt-3 mb-3 text-center">Mountain View</h5>
+      
+                  </div>
+                  </div>
+                  </div>
+              </div>
+      
+      
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="row mb-2"> 
+                <div class="col " style="padding-right:0;" >
+                    <div class="card card-block" style="background-color: #4d4c4c;" >
+                  
+                      <div class="text-center" >
+                         <img class = '' src="./logos/sodic.JPG" alt="" style="height: 90%; width: 90%;">
+                      </div>
+                      <h5 class="card-title mt-3 mb-3 text-center">SODIC</h5>
+                </div>
+                </div>
+      
+                <div class="col ">
+                  <div class="card card-block" style="background-color: #4d4c4c;" >
+                  
+                    <div class="text-center">
+                      <img class = '' src="./logos/seif.jpg" alt="" style="height: 90%; width: 90%;">
+                    </div>
+                    <h5 class="card-title mt-3 mb-3 text-center">Seif</h5>
+              </div>
+              </div>
+                </div>
+      
+                   <div class="row"> 
+                    <div class="col " style="padding-right:0;" >
+                      <div class="card card-block" style="background-color: #4d4c4c;" >
+                    
+                        <div class="text-center">
+                          <img class = '' src="./logos/elghonemy.jpg" alt="" style="height: 90%; width: 90%;">
+                        </div>
+                        <h5 class="card-title mt-3 mb-3 text-center">ElGhonemy</h5>
+                        
+                  </div>
+                  </div>
+      
+                  <div class="col ">
+                    <div class="card card-block" style="background-color: #4d4c4c;" >
+                      <div class="text-center">
+                        <img class = '' src="./logos/tasheed.JPG" alt="" style="height: 90%; width: 90%;">
+                      </div>
+                      <h5 class="card-title mt-3 mb-3 text-center">Tasheed</h5>
+                </div>
+                </div>
+                </div>
+
+
+
+
+
+
+                
+
+              
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="row mb-2"> 
+              <div class="col " style="padding-right:0;">
+                  <div class="card card-block" style="background-color: #4d4c4c;" >
+                
+                    <div class="text-center" >
+                      <img class = '' src="./logos/alforat.jpg" alt="" style="height: 90%; width: 90%;">
+                    </div>
+                    <h5 class="card-title mt-3 mb-3 text-center">Alforat Development </h5>
+                    
+              </div>
+              </div>
+  
+              <div class="col ">
+                <div class="card card-block" style="background-color: #4d4c4c;" >
+                  <div class="text-center">
+                    <img class = '' src="./logos/contech.JPG" alt=""  style="height: 90%; width: 90%;">
+                  </div>
+                  <h5 class="card-title mt-3 mb-3 text-center">CON.TECH</h5>
+            </div>
+            </div>
+              </div>
+  
+                 <div class="row"> 
+                  <div class="col " style="padding-right:0;" >
+                    <div class="card card-block" style="background-color: #4d4c4c;" >
+                      <div class="text-center">
+                        <img class = '' src="./logos/elmasrya.jpg" alt="" style="height: 90%; width: 90%;">
+                      </div>
+                      <h5 class="card-title mt-3 mb-3 text-center">ElMasrya Development</h5>
+                </div>
+                </div>
+  
+                <div class="col ">
+                  <div class="card card-block" style="background-color: #4d4c4c;" >
+                    <div class="text-center">
+                      <img class = '' src="./logos/elsweedy.jpg" alt="" style="height: 90%; width: 90%;">
+                    </div>
+                    <h5 class="card-title mt-3 mb-3 text-center">ElSwedey Electric</h5>
+  
+              </div>
+              </div>
+              </div>
+          </div>
+  
+  
+  
+            
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="row mb-2"> 
+              <div class="col " style="padding-right:0;">
+                  <div class="card card-block" style="background-color: #4d4c4c;" >
+                
+                    <div class="text-center">
+                      <img class = '' src="./logos/gieco.jpg" alt="" style="height: 90%; width: 90%;">
+                    </div>
+                    <h5 class="card-title mt-3 mb-3 text-center">GIECO</h5>
+                    
+              </div>
+              </div>
+  
+              <div class="col ">
+                <div class="card card-block" style="background-color: #4d4c4c;" >
+  
+                  <div class="text-center">
+                    <img class = '' src="./logos/jumeirah.JPG" alt="" style="height: 90%; width: 90%;">
+                  </div>
+                  <h5 class="card-title mt-3 mb-3 text-center">Jumeriah Egypt</h5> 
+            </div>
+            </div>
+              </div>
+  
+                 <div class="row"> 
+                  <div class="col " style="padding-right:0;" >
+                    <div class="card card-block" style="background-color: #4d4c4c;" >
+                      <div class="text-center">
+                        <img class = '' src="./logos/shams.JPG" alt="" style="height: 90%; width: 90%;">
+                      </div>
+                      <h5 class="card-title mt-3 mb-3 text-center">Shams</h5>
+                </div>
+                </div>
+  
+                <div class="col ">
+                  <div class="card card-block" style="background-color: #4d4c4c;" >
+  
+                    <div class="text-center">
+                      <img class = '' src="./logos/utilco.jfif" alt="" style="height: 90%; width: 90%;">
+                    </div>
+                    <h5 class="card-title mt-3 mb-3 text-center">Utilco</h5>
+  
+              </div>
+              </div>
+              </div>
+          </div>
+  
+  
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="row mb-2"> 
+            <div class="col " style="padding-right:0;" >
+                <div class="card card-block" style="background-color: #4d4c4c;" >
+              
+                  <div class="text-center" >
+                     <img class = '' src="./logos/giza.jpg" alt="" style="height: 90%; width: 90%;">
+                  </div>
+                  <h5 class="card-title mt-3 mb-3 text-center">GIZA General</h5>
+            </div>
+            </div>
+  
+            <div class="col ">
+              <div class="card card-block" style="background-color: #4d4c4c;" >
+              
+                <div class="text-center">
+                  <img class = '' src="./logos/comet.png" alt="" style="height: 90%; width: 90%;">
+                </div>
+                <h5 class="card-title mt-3 mb-3 text-center">COMET</h5>
+          </div>
+          </div>
+            </div>
+            </div>
+            
+            
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <!-- <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Our Clients</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <img src="./pics/elghonemy.png" class="rounded float-start" alt=".elghonemy" height="400px">
+          <img src="./pics/comet.png" class="rounded float-start" alt="comet" height="400px">
+          <img src="./pics/comet.png" class="rounded float-start" alt="comet" height="400px">
+          <img src="./pics/comet.png" class="rounded float-start" alt="comet" height="400px">
+
+
+
+        </p>
+
+
+
+            </div> -->
+          <!-- <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a> -->
+
+
+
+<!-- 
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div> -->
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>If you're interested in a cooperation with us, get in touch with us through the following:</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <address><a href='https://goo.gl/maps/YJQKXgajnWKVoTVL6' target="_blank">Main HQ: 4 Tout Ankh Amoun st. - The eighth floor - Al shaker building</a></address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="bi bi-phone"></i>
+              <h3>Phone Number</h3>
+              <p><a href='tel:01000051598'>01000051598 </a> – <a href='tel:034282728'>034282728</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:commercial.sector@concretorm.com">commercial.sector@concretorm.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Concreto Remix</h3>
+              <p>
+                <strong>Phone:</strong> <a href='tel:01000051598'>01000051598 </a> – <a href='tel:01111521888'>01111521888</a> - <a href='tel:034249410'>034249410</a></p> </br>
+                <strong>Email:</strong><a href="mailto:commercial.sector@concretorm.com">commercial.sector@concretorm.com</a>  <br>
+                <strong>Address:</strong><a href='https://goo.gl/maps/YJQKXgajnWKVoTVL6' target="_blank"> 4 Tout Ankh Amoun st. - the eighth floor - Al shaker building</a>
+                <br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 footer-links">
+            <!-- <h4>Our Locations</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Location 1</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Location 2</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Location 3</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Location 4</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Location 5</a></li>
+            </ul> -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="board.html">Board of Direction</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="sectors.html">Our Sectors</a></li>
+
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4></h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="latest-projects.html">Latest Projects</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="careers.html">Careers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="cilents.html">Our Clients</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+              <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Our Sectors</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Latest Projects</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Careers</a></li> -->
+            </ul>
+          </div>
+          
+          <div class="container">
+            <h3>Our Locations</h3>
+  
+            <card class="card" style="background-color:grey;">
+              <iframe class="card-img-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213.26702475344575!2d29.941665723794678!3d31.213181845008677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c49050898337%3A0xc40930caaf4f0da3!2s6W7R%2B7PJ%2C%20Smoha%20Sq.%2C%20Ezbet%20Saad%2C%20Sidi%20Gaber%2C%20Alexandria%20Governorate%205432060!5e0!3m2!1sen!2seg!4v1685334394491!5m2!1sen!2seg" frameborder="0" style="border:0;" allowfullscreen="">
+              </iframe>
+              <div class="card-body">
+                <table style="color: white;">
+                  <tr>
+                    <td><i class="fas fa-map-marker-alt"></i></td>
+                    <td>
+                      <address><li>
+                        <a href='https://goo.gl/maps/YJQKXgajnWKVoTVL6' target="_blank" style="color:white;"><strong>Main HQ: 4 Tout Ankh Amoun st.</strong> - the eighth floor
+                          Al shaker building</a></li>
+                      </address>
+                      <address><li>
+                        <a href='' target="_blank" style="color:white;"><strong>First patch plant </strong> - (Matrouh) - Samala – Kilo 8 </a></li>
+                      </address>
+                      <address><li>
+                        <a href='' target="_blank" style="color:white;"><strong>Second patch plant </strong> - (Hanish)- Hanish – kilo 45</a></li>
+                      </address>
+
+                    </td>
+                    <td class="col-lg-3">
+
+                    </td>
+
+                    <td>
+                    <address><li>
+                      <a href='' target="_blank" style="color:white;"><strong>Third patch plant </strong> - (Mountain view)- Mountain view project - 25 km  before Ras  Elhekma</a></li>
+                    </address>
+                    <address><li>
+                      <a href='' target="_blank" style="color:white;"><strong>Fourth Patch Plant</strong> - (Sawary) Moharem Bek-Alexandria  </a></li>
+                    </address>
+                    <address><li>
+                      <a href='' target="_blank" style="color:white;"><strong>Fifth patch plant </strong> - (First ) Infront of the first gate -Elmoaf elgded  </a></li>
+                    </address>
+                  </td>
+                  </tr>
+                </table>
+              </div>
+            </card>
+            
+              
+            </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Concreto Remix</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Concreto Remixin-free-bootstrap-theme/ -->
+        Designed by <a href="http://www.navamarketingagency.com">Nava Agency</a>      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <!--<script src="assets/js/animsition.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+  <script src="assets/js/jquery.pagepiling.min.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+  <script src="assets/js/wow.min.js"></script> -->
+  
+
+</body>
+
+</html>
